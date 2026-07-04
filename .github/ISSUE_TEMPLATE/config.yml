@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Vault Manager
-    url: https://github.com/Dick-s-Vault/vault-manager/issues
-    about: Please report organization-wide issues or automation bugs here.
+  - name: Vault Infrastructure Manager
+    url: https://github.com/RPDevs-Vault/vault-manager/issues
+    about: Please report organization-wide architecture issues, security governance bugs, or synchronization questions here.
+  - name: Container & Build Manager
+    url: https://github.com/RPDevs-Vault/container-manager/issues
+    about: Report container compilation bugs, Docker build failures, or package pruning issues here.

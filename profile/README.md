@@ -1,12 +1,12 @@
-# 🏛️ RPDevs-Vault Command Center
+# 🏛️ RPDevs-Vault Security Command Center
 
-Welcome to the automated core of **RPDevs-Vault**. This organization is a high-performance hub managed by a robust 9-Repo tiered architecture dedicated to infrastructure archival, governance, task sync, build fleets, secret brokers, and GitOps distribution.
+Welcome to the automated core of **RPDevs-Vault**. This organization is a high-performance sovereign hub managed by a robust 9-repo tiered architecture dedicated to infrastructure archival, governance, task sync, build fleets, secret brokers, and GitOps distribution.
 
 ---
 
 ## 📊 The 9-Repo Management Architecture
 
-| Tier | Manager | Role | Status |
+| Tier | Manager | Role / Function | Operational Status |
 | :--- | :--- | :--- | :--- |
 | **Tier 0** | **[github-manager](https://github.com/RPDevs-Vault/github-manager)** | 🌐 **Global Cockpit**: Live health, runner telemetry, & API limits. | ![Health](https://img.shields.io/badge/Cockpit-Active-brightgreen) |
 | **Tier 0.5** | **[monitor-manager](https://github.com/RPDevs-Vault/monitor-manager)** | 🚨 **Observability**: Uptime verification, probes, and notification alerts. | ![Monitor](https://img.shields.io/badge/Monitor-Active-brightgreen) |
@@ -21,12 +21,33 @@ Welcome to the automated core of **RPDevs-Vault**. This organization is a high-p
 ---
 
 ## 🚀 Key Capabilities
-*   **Digital Nervous System:** Real-time hardware telemetry from self-hosted nodes.
-*   **Event-Driven CI/CD:** Hub Dispatch Orchestrator prevents API rate limit exhaustion.
-*   **Depends-as-a-Service (DaaS):** Pre-compiled toolchains accelerated by `ccache`.
-*   **Hardware-Bound Secrets:** Age encryption wrapped with FIDO2 security keys.
-*   **Continuous Observability:** Active probes checking API and runner connectivity.
-*   **Decoupled GitOps:** Separating compilation, distribution, and target provisioning.
+
+```
++-------------------------------------------------------------------------------+
+|                            RPDevs-Vault Architecture                          |
++-------------------------------------------------------------------------------+
+|                                                                               |
+|   [github-manager] <----> [monitor-manager] <----> [vault-manager]            |
+|          |                                                |                   |
+|          v                                                v                   |
+|   [identity-manager]                               [thought-manager]          |
+|    (FIDO2 + Age Key)                               (ADRs / Guidelines)        |
+|          |                                                |                   |
+|          v                                                v                   |
+|   [container-manager]                             [project-manager]           |
+|    (Runner Build fleet)                            (Cross-org sync)           |
+|          |                                                                    |
+|          v                                                                    |
+|   [distributor-manager] ----> [deploy-manager]                                |
+|    (Release gateway)           (GitOps / Ansible)                             |
+|                                                                               |
++-------------------------------------------------------------------------------+
+```
+
+*   **Hardware-Bound Secrets (Tier 1.5):** Symmetric Age encryption natively bound to physical FIDO2 hardware keys via custom wrappers. Credentials only exist in-memory during step execution, mitigating persistent disk compromise.
+*   **Decoupled GitOps (Tier 4.5):** Absolute decoupling between compilation (`container-manager`) and remote target deployment (`deploy-manager`) using playbooks and environment validation routines.
+*   **Depends-as-a-Service (Tier 2):** Fast-tracked cross-compilation utilizing local caching over shared network attachments (NFS/ccache) across multiple runner architectures.
+*   **Digital Nervous System (Tier 0):** Real-time monitoring of self-hosted nodes and automation telemetry with automatic alerts upon probe failures.
 
 ### 📦 [View Organization Packages](https://github.com/orgs/RPDevs-Vault/packages)
 
