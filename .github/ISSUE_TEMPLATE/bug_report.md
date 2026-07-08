@@ -22,7 +22,7 @@ A clear and concise description of what you expected to happen.
 If applicable, paste terminal outputs, action execution logs, or redacted configuration blocks to help explain your problem.
 
 ### Environment Details
-- Active Manager: [e.g., github-manager, vault-manager, container-manager, identity-manager]
+- Active Manager: [e.g., ops-manager, builder-manager, delivery-manager, workspace-manager]
 - Target Node: [e.g., T430-Runner, Local Workstation, Remote Host]
 - Operating Environment: [e.g., Docker Container, OpenWRT Router, Linux Shell]
 

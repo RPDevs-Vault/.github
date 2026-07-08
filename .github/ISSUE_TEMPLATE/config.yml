@@ -1,8 +1,15 @@
-blank_issues_enabled: false
+blank_issues_enabled:false
 contact_links:
-  - name: Vault Infrastructure Manager
-    url: https://github.com/RPDevs-Vault/vault-manager/issues
-    about: Please report organization-wide architecture issues, security governance bugs, or synchronization questions here.
-  - name: Container & Build Manager
-    url: https://github.com/RPDevs-Vault/container-manager/issues
-    about: Report container compilation bugs, Docker build failures, or package pruning issues here.
+  - name: ⚙️ Ops & Governance Manager
+    url: https://github.com/RPDevs-Vault/ops-manager/issues
+    about: Please report organization-wide architecture issues, telemetry bugs, or security/FIDO2 questions here.
+  - name: 🏗️ Builder & Dependency Manager
+    url: https://github.com/RPDevs-Vault/builder-manager/issues
+    about: Report container compilation bugs, Docker build failures, or dependency updates here.
+  - name: 🚀 Release & Delivery Manager
+    url: https://github.com/RPDevs-Vault/delivery-manager/issues
+    about: Report deployment configuration issues, Ansible/GitOps failures, or release bugs here.
+  - name: 🧠 Workspace & Task Manager
+    url: https://github.com/RPDevs-Vault/workspace-manager/issues
+    about: Report local workstation project issues, task synchronization roadmap bugs, or ADR/guideline changes here.
+
